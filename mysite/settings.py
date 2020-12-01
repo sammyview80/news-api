@@ -124,7 +124,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 # Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
+PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
+STATIC_ROOT = './staticfiles'
 STATIC_URL = '/static/'
+
+# Extra lookup directories for collectstatic to find static files
+STATICFILES_DIRS = (
+    os.path.join('static'),
+)
+
 
 prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
