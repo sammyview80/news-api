@@ -26,7 +26,7 @@ SECRET_KEY = 'p*e=fr7+25ny%)rh*edg94++9i0g-k824dbwre3h*8=39f^qav'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['news-api-skysports.herokuapp.com']
+ALLOWED_HOSTS = ['news-api-skysports.herokuapp.com', 'http://localhost:3000/']
 
 
 # Application definition
